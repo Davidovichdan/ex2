@@ -14,9 +14,9 @@ public class Dictionary {
 
 
     public Dictionary(String... FileNames) {
-         cm_Exist = new CacheManager(400, new LRU());
-         cm_NOT_Exist = new CacheManager(100, new LFU());
-         bf = new BloomFilter(256, "MD5", "SHA1");
+        cm_Exist = new CacheManager(400, new LRU());
+        cm_NOT_Exist = new CacheManager(100, new LFU());
+        bf = new BloomFilter(256, "MD5", "SHA1");
 
         for (String f : FileNames) {
             filesList.add(f);

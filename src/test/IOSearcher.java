@@ -19,8 +19,7 @@ public class IOSearcher {
             while (in.hasNext()) {
                 if (in.next().contains(is)) {
                     in.close();
-                    return true;
-                }
+                    return true;}
             }
         in.close();
         }

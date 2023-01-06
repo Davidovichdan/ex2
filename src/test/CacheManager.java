@@ -14,7 +14,6 @@ public class CacheManager {
         crp = crpGiven;
         freeSize = sizeCache;
     }
-
     public boolean query(String b) {
         return set.contains(b);
     }

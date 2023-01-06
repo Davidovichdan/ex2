@@ -16,7 +16,6 @@ public class LRU implements CacheReplacementPolicy {
             set.remove(word);
         set.add(word);
     }
-
     @Override
     public String remove() {
         String wordToRemove= set.iterator().next();
